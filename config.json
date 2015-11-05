@@ -1,0 +1,7 @@
+{
+  "domain": "www.fastline.com",
+  "port":"3000",
+  "mongodb": {
+    "url": "mongodb://localhost/fastline"
+  }
+}
