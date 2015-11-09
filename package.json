@@ -8,6 +8,7 @@
   "dependencies": {
     "mongoose":"~4.1.1",
     "config.json":"~0.0.4",
-    "express":"~4.13.3"
+    "express":"~4.13.3",
+    "twilio": "^2.5.1"
   }
 }
