@@ -12,13 +12,30 @@ db.once('open', function (callback) {
   console.log("database opened");
 });
 
-app.get('/', function (req, res) {
-  
+function sendMessage() {
+  twilio.sendSms({
+    to:'+8613162195325',
+    from:'+33644600833',
+    body:'ahoy hoy! Testing Twilio and node.js'
+}, function(error, message) {
+    if (!error) {
+        console.log('Success! The SID for this SMS message is:');
+        console.log(message.sid);
+        console.log('Message sent on:');
+        console.log(message.dateCreated);
+    } else {
+        console.log('Oops! There was an error.');
+    }
+});
+}
+
+app.get('/', function (req, res) {  
   var newUser = User();
   newUser.phone = "8323243";
   
   newUser.save();
-  res.send('Hello World!');  
+  res.send('Hello World!');
+  sendMessage();
 });
 
 var server = app.listen(config.port, function () {
