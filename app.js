@@ -17,7 +17,7 @@ function sendMessage() {
     to:'+8613162195325',
     from:'+33644600833',
     body:'ahoy hoy! Testing Twilio and node.js'
-}, function(error, message) {
+  }, function(error, message) {
     if (!error) {
         console.log('Success! The SID for this SMS message is:');
         console.log(message.sid);
@@ -26,8 +26,12 @@ function sendMessage() {
     } else {
         console.log('Oops! There was an error.');
     }
-});
+  });
 }
+
+app.post('/', function(req, res) {
+    res.send(req);
+});
 
 app.get('/', function (req, res) {  
   var newUser = User();
