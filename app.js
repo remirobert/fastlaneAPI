@@ -30,6 +30,8 @@ function sendMessage() {
 }
 
 app.post('/', function(req, res) {
+    console.log("------------ [RECEIVED MESSAGE] -------");
+    console.log(req);
     res.send(req);
 });
 
