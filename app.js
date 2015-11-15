@@ -29,13 +29,15 @@ function sendMessage() {
   });
 }
 
-app.post('/', function(req, res) {
+app.post('/sms', function(req, res) {
     console.log("------------ [RECEIVED MESSAGE] -------");
     console.log(req);
     res.send(req);
 });
 
-app.get('/', function (req, res) {  
+app.get('/sms', function (req, res) {
+  console.log("------------ [RECEIVED MESSAGE] -------");
+  console.log(req);  
   var newUser = User();
   newUser.phone = "8323243";
   
