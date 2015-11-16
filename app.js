@@ -108,8 +108,8 @@ function sendWelcomeUser(user) {
 
 app.get('/sms', function (req, res) {
   console.log("------------ [RECEIVED MESSAGE] -------");
-  console.log("req : " + req);
-    console.log("req : " + res);
+  console.log(req);
+    console.log(res);
   var phoneNumber = req.querry.from;
   var command = req.querry.body.toUpperCase().toLowerCase();  
    
