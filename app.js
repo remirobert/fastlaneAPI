@@ -37,7 +37,7 @@ function sendMessage(to, content) {
         console.log('Message sent on:');
         console.log(message.dateCreated);
     } else {
-        console.log('Oops! There was an error.');
+        console.log('Oops! There was an error. : ' + error);
     }
   });
 }
