@@ -12,11 +12,23 @@ db.once('open', function (callback) {
   console.log("database opened");
 });
 
-function sendMessage() {
+var listQueue = new Array();
+
+function findUser(user) {
+    for (var index = 0; index < listQueue.length; index++) {
+      var currentUser = listQueue[index];
+      if (currentUser.phone === user.phone) {
+        return index;
+      }
+    }
+   return -1;
+}
+
+function sendMessage(to, content) {
   twilio.sendSms({
-    to:'+8613162195325',
+    to:to,
     from:'+33644600833',
-    body:'ahoy hoy! Testing Twilio and node.js'
+    body:content
   }, function(error, message) {
     if (!error) {
         console.log('Success! The SID for this SMS message is:');
@@ -29,21 +41,91 @@ function sendMessage() {
   });
 }
 
-app.post('/sms', function(req, res) {
-    console.log("------------ [RECEIVED MESSAGE] -------");
-    console.log(req);
-    res.send(req);
-});
+function interpretCommand(command, user) {
+    var content = null;
+    console.log("interpret command");
+    
+    switch (command) {
+    case "hello":
+      var currentIndexFind = findUser(user);
+      if (currentIndexFind != -1) {
+        content = "Vous êtes déjà dans la liste d'attente à la position " + currentIndexFind + ".";
+      }
+      else {
+        listQueue.push(user);
+        var currentPosInQueue = listQueue.length;
+        content = "Bienvenue sur Fastlne, le service de gestion des files d'attente par SMS.";
+        content += " Vous êtes le numéro " + currentPosInQueue + " dans la file d'attente.";
+        content += " Vous serez prévenu par sms dés que ce sera à votre tour de passer en caisse.";        
+      }   
+      break;
+
+    case "help":
+      console.log("commande help");
+      content = "help - envoyer <<help>> pour obtenirde l'aide sur le fonctionnement du service."
+      content += "\nhello - envoyer <<hello>> pour entrer dans la fille d'attente.";
+      content += "\nstatus - envoyer <<status>> pour connaitre votre position dans la fille d'attente.";
+      content += "\nquit - envoyer <<quit>> pour sortir de la file d'attente.";
+      break;
+  
+    case "status":
+      content = ""
+      var positionQueue = findUser(user);
+      if (positionQueue == -1) {
+        content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez << hello >> pour entrer dans la fille d'attente.";
+      }
+      else {
+        content = "Vous êtes en position " + positionQueue + " dans la file d'attente.";        
+      }
+      break;
+
+    default:
+      break;
+  }
+  if (content) {
+    console.log("content : " + content);
+    sendMessage(user.phone, content);    
+  }
+}
+
+function sendWelcomeUser(user) {
+  var content = "Bienvenue sur Fastlne, le service de gestion des files d'attente par SMS. Voici le descriptif des principales commandes:";
+  content += "\n\nhelp - envoyer <<help>> pour obtenirde l'aide sur le fonctionnement du service.";
+  content += "\n\nhello - envoyer <<hello>> pour entrer dans la fille d'attente.";
+  content += "\n\nstatus - envoyer <<status>> pour connaitre votre position dans la fille d'attente.";
+  content += "\n\nquit - envoyer <<quit>> pour sortir de la file d'attente.";
+  sendMessage(user.phone, content);
+}
 
 app.get('/sms', function (req, res) {
   console.log("------------ [RECEIVED MESSAGE] -------");
-  console.log(req);  
-  var newUser = User();
-  newUser.phone = "8323243";
-  
-  newUser.save();
-  res.send('Hello World!');
-  sendMessage();
+  var phoneNumber = "+131";
+  var command = "hello".toUpperCase().toLowerCase();  
+   
+  console.log(listQueue);
+   
+  User.findOne({phone:phoneNumber}, function(err, obj) {
+      if (err) {
+        console.log("error" + err);
+        res.send("error");
+        return;
+      }
+      if (obj) {
+        console.log("Get user");
+        interpretCommand(command, obj);
+      }
+      else {
+        var newUser = User();
+        newUser.phone = phoneNumber;
+        newUser.save(function(err) {
+          if (!err) {
+            console.log("Create new user");
+            interpretCommand(command, newUser);
+          }
+        });
+      }
+  });
+  res.send('Hello World!');                    
 });
 
 var server = app.listen(config.port, function () {
