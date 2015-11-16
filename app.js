@@ -59,14 +59,6 @@ function interpretCommand(command, user) {
         content += " Vous serez prévenu par sms dés que ce sera à votre tour de passer en caisse.";        
       }   
       break;
-
-    case "help":
-      console.log("commande help");
-      content = "help - envoyer <<help>> pour obtenirde l'aide sur le fonctionnement du service."
-      content += "\nhello - envoyer <<hello>> pour entrer dans la fille d'attente.";
-      content += "\nstatus - envoyer <<status>> pour connaitre votre position dans la fille d'attente.";
-      content += "\nquit - envoyer <<quit>> pour sortir de la file d'attente.";
-      break;
   
     case "status":
       content = ""
@@ -78,8 +70,14 @@ function interpretCommand(command, user) {
         content = "Vous êtes en position " + positionQueue + " dans la file d'attente.";        
       }
       break;
-
+          
     default:
+    case "help":
+      console.log("commande help");
+      content = "help - envoyer <<help>> pour obtenirde l'aide sur le fonctionnement du service."
+      content += "\nhello - envoyer <<hello>> pour entrer dans la fille d'attente.";
+      content += "\nstatus - envoyer <<status>> pour connaitre votre position dans la fille d'attente.";
+      content += "\nquit - envoyer <<quit>> pour sortir de la file d'attente.";
       break;
   }
   if (content) {
