@@ -70,6 +70,17 @@ function interpretCommand(command, user) {
         content = "Vous êtes en position " + positionQueue + " dans la file d'attente.";        
       }
       break;
+      
+    case "quit":
+      var positionQueue = findUser(user);
+      if (positionQueue == -1) {
+        content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez << hello >> pour entrer dans la fille d'attente.";
+      }
+      else  {
+        listQueue.splice(positionQueue, 1);
+        content = "Nous avons bien pris en compte votre retrait de la file d’attente";
+      }
+      break; 
           
     default:
     case "help":
@@ -97,6 +108,7 @@ function sendWelcomeUser(user) {
 
 app.get('/sms', function (req, res) {
   console.log("------------ [RECEIVED MESSAGE] -------");
+  console.log(req);
   var phoneNumber = "+131";
   var command = "hello".toUpperCase().toLowerCase();  
    
