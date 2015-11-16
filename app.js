@@ -105,9 +105,8 @@ function interpretCommand(command, user) {
       contents.push(content4);
       break;
   }
-  if (content) {
-    console.log("content : " + content);
-    sendMessage(user.phone, content);    
+  for (var index = 0; index < contents.length; index++) {
+    sendMessage(user.phone, contents[index]);        
   }
 }
 
