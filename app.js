@@ -25,6 +25,7 @@ function findUser(user) {
 }
 
 function sendMessage(to, content) {
+  console.log("send message to : " + to);
   twilio.sendSms({
     to:to,
     from:'+33644600833',
