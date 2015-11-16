@@ -110,8 +110,11 @@ app.get('/sms', function (req, res) {
   console.log("------------ [RECEIVED MESSAGE] -------");
   console.log(req);
     console.log(res);
-  var phoneNumber = req.querry.from;
-  var command = req.querry.body.toUpperCase().toLowerCase();  
+  var phoneNumber = req.query.from;
+  var command = req.query.body.toUpperCase().toLowerCase();  
+   
+  console.log("phone number : " + phoneNumber);
+  console.log("command : " + command);
    
   console.log(listQueue);
    
