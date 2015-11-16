@@ -108,10 +108,8 @@ function sendWelcomeUser(user) {
 
 app.get('/sms', function (req, res) {
   console.log("------------ [RECEIVED MESSAGE] -------");
-  console.log(req.query.Body);
-  console.log(res);
   var phoneNumber = "+131";
-  var command = "hello".toUpperCase().toLowerCase();  
+  var command = req.querry.body.toUpperCase().toLowerCase();  
    
   console.log(listQueue);
    
