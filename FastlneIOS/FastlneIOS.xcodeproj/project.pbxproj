@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5134BE1BFAD0910009B774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134BD1BFAD0910009B774 /* AppDelegate.swift */; };
+		BB5134C31BFAD0910009B774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5134C11BFAD0910009B774 /* Main.storyboard */; };
+		BB5134C51BFAD0910009B774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5134C41BFAD0910009B774 /* Assets.xcassets */; };
+		BB5134C81BFAD0910009B774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5134C61BFAD0910009B774 /* LaunchScreen.storyboard */; };
+		BB5134D31BFAD0910009B774 /* FastlneIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134D21BFAD0910009B774 /* FastlneIOSTests.swift */; };
+		BB5134DE1BFAD0910009B774 /* FastlneIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134DD1BFAD0910009B774 /* FastlneIOSUITests.swift */; };
+		BB5134F11BFAD0D20009B774 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F01BFAD0D20009B774 /* CustomersViewController.swift */; };
+		BB5134F41BFAD0E40009B774 /* CustomersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F31BFAD0E40009B774 /* CustomersController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5134CF1BFAD0910009B774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5134B21BFAD0910009B774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5134B91BFAD0910009B774;
+			remoteInfo = FastlneIOS;
+		};
+		BB5134DA1BFAD0910009B774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5134B21BFAD0910009B774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5134B91BFAD0910009B774;
+			remoteInfo = FastlneIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB5134BA1BFAD0910009B774 /* FastlneIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastlneIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5134BD1BFAD0910009B774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB5134C21BFAD0910009B774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB5134C41BFAD0910009B774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB5134C71BFAD0910009B774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB5134C91BFAD0910009B774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5134CE1BFAD0910009B774 /* FastlneIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlneIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5134D21BFAD0910009B774 /* FastlneIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlneIOSTests.swift; sourceTree = "<group>"; };
+		BB5134D41BFAD0910009B774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5134D91BFAD0910009B774 /* FastlneIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlneIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5134DD1BFAD0910009B774 /* FastlneIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlneIOSUITests.swift; sourceTree = "<group>"; };
+		BB5134DF1BFAD0910009B774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5134F01BFAD0D20009B774 /* CustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
+		BB5134F31BFAD0E40009B774 /* CustomersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5134B71BFAD0910009B774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134CB1BFAD0910009B774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134D61BFAD0910009B774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB5134B11BFAD0910009B774 = {
+			isa = PBXGroup;
+			children = (
+				BB5134BC1BFAD0910009B774 /* FastlneIOS */,
+				BB5134D11BFAD0910009B774 /* FastlneIOSTests */,
+				BB5134DC1BFAD0910009B774 /* FastlneIOSUITests */,
+				BB5134BB1BFAD0910009B774 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5134BB1BFAD0910009B774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134BA1BFAD0910009B774 /* FastlneIOS.app */,
+				BB5134CE1BFAD0910009B774 /* FastlneIOSTests.xctest */,
+				BB5134D91BFAD0910009B774 /* FastlneIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB5134BC1BFAD0910009B774 /* FastlneIOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134F21BFAD0D90009B774 /* Controllers */,
+				BB5134EF1BFAD0BC0009B774 /* Models */,
+				BB5134EE1BFAD0B50009B774 /* Views */,
+				BB5134ED1BFAD0B00009B774 /* ViewControllers */,
+				BB5134EC1BFAD0AA0009B774 /* Application */,
+				BB5134EB1BFAD0990009B774 /* Storyboards */,
+				BB5134C41BFAD0910009B774 /* Assets.xcassets */,
+				BB5134C91BFAD0910009B774 /* Info.plist */,
+			);
+			path = FastlneIOS;
+			sourceTree = "<group>";
+		};
+		BB5134D11BFAD0910009B774 /* FastlneIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134D21BFAD0910009B774 /* FastlneIOSTests.swift */,
+				BB5134D41BFAD0910009B774 /* Info.plist */,
+			);
+			path = FastlneIOSTests;
+			sourceTree = "<group>";
+		};
+		BB5134DC1BFAD0910009B774 /* FastlneIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134DD1BFAD0910009B774 /* FastlneIOSUITests.swift */,
+				BB5134DF1BFAD0910009B774 /* Info.plist */,
+			);
+			path = FastlneIOSUITests;
+			sourceTree = "<group>";
+		};
+		BB5134EB1BFAD0990009B774 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134C11BFAD0910009B774 /* Main.storyboard */,
+				BB5134C61BFAD0910009B774 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB5134EC1BFAD0AA0009B774 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134BD1BFAD0910009B774 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BB5134ED1BFAD0B00009B774 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134F01BFAD0D20009B774 /* CustomersViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BB5134EE1BFAD0B50009B774 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BB5134EF1BFAD0BC0009B774 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB5134F21BFAD0D90009B774 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB5134F31BFAD0E40009B774 /* CustomersController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5134B91BFAD0910009B774 /* FastlneIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5134E21BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOS" */;
+			buildPhases = (
+				BB5134B61BFAD0910009B774 /* Sources */,
+				BB5134B71BFAD0910009B774 /* Frameworks */,
+				BB5134B81BFAD0910009B774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastlneIOS;
+			productName = FastlneIOS;
+			productReference = BB5134BA1BFAD0910009B774 /* FastlneIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5134CD1BFAD0910009B774 /* FastlneIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5134E51BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOSTests" */;
+			buildPhases = (
+				BB5134CA1BFAD0910009B774 /* Sources */,
+				BB5134CB1BFAD0910009B774 /* Frameworks */,
+				BB5134CC1BFAD0910009B774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5134D01BFAD0910009B774 /* PBXTargetDependency */,
+			);
+			name = FastlneIOSTests;
+			productName = FastlneIOSTests;
+			productReference = BB5134CE1BFAD0910009B774 /* FastlneIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB5134D81BFAD0910009B774 /* FastlneIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5134E81BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOSUITests" */;
+			buildPhases = (
+				BB5134D51BFAD0910009B774 /* Sources */,
+				BB5134D61BFAD0910009B774 /* Frameworks */,
+				BB5134D71BFAD0910009B774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5134DB1BFAD0910009B774 /* PBXTargetDependency */,
+			);
+			name = FastlneIOSUITests;
+			productName = FastlneIOSUITests;
+			productReference = BB5134D91BFAD0910009B774 /* FastlneIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB5134B21BFAD0910009B774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Remi Robert";
+				TargetAttributes = {
+					BB5134B91BFAD0910009B774 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BB5134CD1BFAD0910009B774 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BB5134B91BFAD0910009B774;
+					};
+					BB5134D81BFAD0910009B774 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BB5134B91BFAD0910009B774;
+					};
+				};
+			};
+			buildConfigurationList = BB5134B51BFAD0910009B774 /* Build configuration list for PBXProject "FastlneIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB5134B11BFAD0910009B774;
+			productRefGroup = BB5134BB1BFAD0910009B774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5134B91BFAD0910009B774 /* FastlneIOS */,
+				BB5134CD1BFAD0910009B774 /* FastlneIOSTests */,
+				BB5134D81BFAD0910009B774 /* FastlneIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5134B81BFAD0910009B774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5134C81BFAD0910009B774 /* LaunchScreen.storyboard in Resources */,
+				BB5134C51BFAD0910009B774 /* Assets.xcassets in Resources */,
+				BB5134C31BFAD0910009B774 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134CC1BFAD0910009B774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134D71BFAD0910009B774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5134B61BFAD0910009B774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5134F11BFAD0D20009B774 /* CustomersViewController.swift in Sources */,
+				BB5134BE1BFAD0910009B774 /* AppDelegate.swift in Sources */,
+				BB5134F41BFAD0E40009B774 /* CustomersController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134CA1BFAD0910009B774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5134D31BFAD0910009B774 /* FastlneIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5134D51BFAD0910009B774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5134DE1BFAD0910009B774 /* FastlneIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5134D01BFAD0910009B774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5134B91BFAD0910009B774 /* FastlneIOS */;
+			targetProxy = BB5134CF1BFAD0910009B774 /* PBXContainerItemProxy */;
+		};
+		BB5134DB1BFAD0910009B774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5134B91BFAD0910009B774 /* FastlneIOS */;
+			targetProxy = BB5134DA1BFAD0910009B774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB5134C11BFAD0910009B774 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5134C21BFAD0910009B774 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB5134C61BFAD0910009B774 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5134C71BFAD0910009B774 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5134E01BFAD0910009B774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB5134E11BFAD0910009B774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5134E31BFAD0910009B774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastlneIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB5134E41BFAD0910009B774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastlneIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB5134E61BFAD0910009B774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastlneIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastlneIOS.app/FastlneIOS";
+			};
+			name = Debug;
+		};
+		BB5134E71BFAD0910009B774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastlneIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastlneIOS.app/FastlneIOS";
+			};
+			name = Release;
+		};
+		BB5134E91BFAD0910009B774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastlneIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastlneIOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BB5134EA1BFAD0910009B774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastlneIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.FastlneIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastlneIOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5134B51BFAD0910009B774 /* Build configuration list for PBXProject "FastlneIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5134E01BFAD0910009B774 /* Debug */,
+				BB5134E11BFAD0910009B774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5134E21BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5134E31BFAD0910009B774 /* Debug */,
+				BB5134E41BFAD0910009B774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB5134E51BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5134E61BFAD0910009B774 /* Debug */,
+				BB5134E71BFAD0910009B774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB5134E81BFAD0910009B774 /* Build configuration list for PBXNativeTarget "FastlneIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5134E91BFAD0910009B774 /* Debug */,
+				BB5134EA1BFAD0910009B774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB5134B21BFAD0910009B774 /* Project object */;
+}
