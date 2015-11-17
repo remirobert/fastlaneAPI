@@ -57,12 +57,8 @@ function interpretCommand(command, user) {
       else {
         listQueue.push(user);
         var currentPosInQueue = listQueue.length;
-        var content1 = "Bienvenue sur Fastlne, le service de gestion des files d'attente par SMS.";
-        var content2 = " Vous êtes le numéro " + currentPosInQueue + " dans la file d'attente.";
-        var content3 = " Vous serez prévenu par sms dés que ce sera à votre tour de passer en caisse.";
-        contents.push(content1);
-        contents.push(content2);        
-        contents.push(content3);                
+        var content = "Bienvenue sur Fastlne, vous êtes le numéro " + currentPosInQueue + " dans la file d’attente. Vous serez prévenu par sms dès que ce sera à votre tour de passer en caisse";
+        contents.push(content);
       }   
       break;
   
@@ -70,7 +66,7 @@ function interpretCommand(command, user) {
       content = ""
       var positionQueue = findUser(user);
       if (positionQueue == -1) {
-         var content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez << hello >> pour entrer dans la fille d'attente.";
+         var content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez hello pour entrer dans la fille d'attente.";
          contents.push(content);
       }
       else {
@@ -82,7 +78,7 @@ function interpretCommand(command, user) {
     case "quit":
       var positionQueue = findUser(user);
       if (positionQueue == -1) {
-         var content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez << hello >> pour entrer dans la fille d'attente.";
+         var content = "Vous n'êtes actuellement pas dans la liste d'attente. Envoyez hello pour entrer dans la fille d'attente.";
          contents.push(content);
       }
       else  {
@@ -95,34 +91,18 @@ function interpretCommand(command, user) {
     default:
     case "help":
       console.log("commande help");
-      var content1 = "help - envoyer help pour obtenirde l'aide sur le fonctionnement du service."
-      var content2 = "\nhello - envoyer hello pour entrer dans la fille d'attente.";
-      var content3 = "\nstatus - envoyer status pour connaitre votre position dans la fille d'attente.";
-      var content4 = "\nquit - envoyer quit pour sortir de la file d'attente.";
-      contents.push(content1);
-      contents.push(content2);
-      contents.push(content3);
-      contents.push(content4);
+      
+      var content = "Envoyer:"
+      content += "\nhelp:pour obtenir de l’aide"
+      content += "\nhello:pour entrer dans la file d’attente"
+      content += "\nstatus:pour connaitre votre position"
+      content += "\nquit:pour sortir de la file"
+      contents.push(content);
       break;
   }
   for (var index = 0; index < contents.length; index++) {
     sendMessage(user.phone, contents[index]);        
   }
-}
-
-function sendWelcomeUser(user) {
-  var content1 = "Bienvenue sur Fastlne, le service de gestion des files d'attente par SMS.";
-  var content2 = "Voici le descriptif des principales commandes:";
-  var content3 = "\n\nhelp - envoyer <<help>> pour obtenirde l'aide sur le fonctionnement du service.";
-  var content4 = "\n\nhello - envoyer <<hello>> pour entrer dans la fille d'attente.";
-  var content5 = "\n\nstatus - envoyer <<status>> pour connaitre votre position dans la fille d'attente.";
-  var content6 = "\n\nquit - envoyer <<quit>> pour sortir de la file d'attente.";
-  sendMessage(user.phone, content1);
-  sendMessage(user.phone, content2);
-  sendMessage(user.phone, content3);
-  sendMessage(user.phone, content4);
-  sendMessage(user.phone, content5);
-  sendMessage(user.phone, content6);
 }
 
 app.get('/sms', function (req, res) {
@@ -151,7 +131,6 @@ app.get('/sms', function (req, res) {
         newUser.save(function(err) {
           if (!err) {
             console.log("Create new user");
-            sendWelcomeUser();
             interpretCommand(command, newUser);
           }
         });
