@@ -16,6 +16,8 @@
 		BB5134F11BFAD0D20009B774 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F01BFAD0D20009B774 /* CustomersViewController.swift */; };
 		BB5134F41BFAD0E40009B774 /* CustomersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F31BFAD0E40009B774 /* CustomersController.swift */; };
 		BB5134F61BFAD1F60009B774 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F51BFAD1F60009B774 /* Customer.swift */; };
+		BB5134FB1BFB00870009B774 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5134F91BFB00860009B774 /* CustomerTableViewCell.swift */; };
+		BB5134FC1BFB00870009B774 /* CustomerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5134FA1BFB00860009B774 /* CustomerTableViewCell.xib */; };
 		E66092E0059AD8FC92D8D5B1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21246AB0E948DC4456825678 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		BB5134F01BFAD0D20009B774 /* CustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
 		BB5134F31BFAD0E40009B774 /* CustomersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersController.swift; sourceTree = "<group>"; };
 		BB5134F51BFAD1F60009B774 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BB5134F91BFB00860009B774 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		BB5134FA1BFB00860009B774 /* CustomerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 		BB5134EE1BFAD0B50009B774 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB5134F91BFB00860009B774 /* CustomerTableViewCell.swift */,
+				BB5134FA1BFB00860009B774 /* CustomerTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				BB5134C81BFAD0910009B774 /* LaunchScreen.storyboard in Resources */,
 				BB5134C51BFAD0910009B774 /* Assets.xcassets in Resources */,
 				BB5134C31BFAD0910009B774 /* Main.storyboard in Resources */,
+				BB5134FC1BFB00870009B774 /* CustomerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5134FB1BFB00870009B774 /* CustomerTableViewCell.swift in Sources */,
 				BB5134F11BFAD0D20009B774 /* CustomersViewController.swift in Sources */,
 				BB5134BE1BFAD0910009B774 /* AppDelegate.swift in Sources */,
 				BB5134F41BFAD0E40009B774 /* CustomersController.swift in Sources */,

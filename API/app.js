@@ -14,6 +14,20 @@ db.once('open', function (callback) {
 
 var listQueue = new Array();
 
+User.find({}, function(err, users) {
+  users.forEach(function(currentUser) {
+     listQueue.push(currentUser);
+  });
+  
+  users.forEach(function(currentUser) {
+     listQueue.push(currentUser);
+  });
+  users.forEach(function(currentUser) {
+     listQueue.push(currentUser);
+  });
+  console.log(listQueue);
+})
+
 function findUser(user) {
     for (var index = 0; index < listQueue.length; index++) {
       var currentUser = listQueue[index];
@@ -137,6 +151,14 @@ app.get('/sms', function (req, res) {
       }
   });
   res.send('Hello World!');                    
+});
+
+app.get('/customers', function(req, res) {
+  var customers = new Array();
+  listQueue.forEach(function(currentCustomer) {
+    customers.push(JSON.stringify(currentCustomer));
+  });      
+  res.send(customers);  
 });
 
 var server = app.listen(config.port, function () {

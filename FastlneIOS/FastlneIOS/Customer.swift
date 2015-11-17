@@ -10,10 +10,20 @@ import UIKit
 
 class Customer {
     var phoneNumber: String!
+    var position: Int!
     
-    class func customersFromJSONResponse(response: NSDictionary) -> [Customer] {
-        let customers = Array<Customer>()
+    init(userInformation: NSDictionary, positionInQueue: Int) {
+        self.phoneNumber = userInformation.objectForKey("phone") as! String
+    }
+    
+    class func customersFromJSONResponse(responses: [NSDictionary]) -> [Customer] {
+        var customers = Array<Customer>()
+        var currentPosition = 1
         
+        for currentUserDictionary in responses {
+            customers.append(Customer(userInformation: currentUserDictionary, positionInQueue: currentPosition))
+            currentPosition += 1
+        }
         return customers
     }
 }
