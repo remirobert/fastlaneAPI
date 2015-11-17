@@ -1,0 +1,3 @@
+user_frameworks!
+pod 'Alamofire'
+pod 'SnapKit'
